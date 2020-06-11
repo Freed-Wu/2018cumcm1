@@ -1,0 +1,25 @@
+﻿\ifnum\strcmp{\jobname}{main}=0
+	\input{set/preclass}
+	\documentclass{article}
+	\input{set/default}
+	\input{set/user}
+	\input{set/article}
+	\begin{document}
+\fi
+%-------------------------------------------------------------------------------------------------------
+\include{inc/abstract}
+\include{inc/contents}
+\include{inc/introduction}
+\include{inc/analysis}
+%-------------------------------------------------------------------------------------------------------
+\include{inc/PCA}
+\include{inc/HLM}
+%-------------------------------------------------------------------------------------------------------
+\include{inc/evaluate}
+\include{inc/reference}
+\include{inc/appendix}
+\include{inc/index}
+%-------------------------------------------------------------------------------------------------------
+\ifnum\strcmp{\jobname}{main}=0
+	\end{document}
+\fi

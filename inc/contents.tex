@@ -1,0 +1,19 @@
+\ifnum\strcmp{\jobname}{contents}=0
+	\input{../set/preclass}
+	\documentclass{article}
+	\input{../set/default}
+	\input{../set/user}
+	\input{../set/article}
+	\begin{document}
+\fi
+%-------------------------------------------------------------------------------------------------------
+\clearpage
+\tableofcontents
+\clearpage
+% \listoffigures
+\clearpage
+\listoftables
+%-------------------------------------------------------------------------------------------------------
+\ifnum\strcmp{\jobname}{contents}=0
+	\end{document}
+\fi

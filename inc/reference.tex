@@ -1,0 +1,21 @@
+\ifnum\strcmp{\jobname}{reference}=0
+	\input{../set/preclass}
+	\documentclass{article}
+	\input{../set/default}
+	\input{../set/user}
+	\input{../set/article}
+	\begin{document}
+\fi
+%-------------------------------------------------------------------------------------------------------
+\clearpage
+\addcontentsline{toc}{section}{参考文献}
+\begin{thebibliography}{}
+	\bibitem{}赵华,张鼎祖.企业资金战略预算管理模式研究[J].会计研究,2007(06):55-60+95-96.\par
+	\bibitem{}程平,蒋雨.大数据时代基于云会计的集团企业资金管理[J].会计之友,2015(10):134-136.\par
+	\bibitem{}蔡宁,何崇中,罗光伟.企业多种经营资金分配的研究[J].杭州电子工业学院学报,1995(04):9-16.\par
+	\bibitem{}祝继高,韩非池,陆正飞.产业政策、银行关联与企业债务融资——基于A股上市公司的实证研究[J].金融研究,2015(03):176-191.\par
+\end{thebibliography}
+%-------------------------------------------------------------------------------------------------------
+\ifnum\strcmp{\jobname}{reference}=0
+	\end{document}
+\fi

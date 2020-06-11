@@ -1,0 +1,16 @@
+\ifnum\strcmp{\jobname}{index}=0
+	\input{../set/preclass}
+	\documentclass{article}
+	\input{../set/default}
+	\input{../set/user}
+	\input{../set/article}
+	\begin{document}
+\fi
+%-------------------------------------------------------------------------------------------------------
+\addcontentsline{toc}{section}{索引}
+\printindex
+\thispagestyle{empty}
+%-------------------------------------------------------------------------------------------------------
+\ifnum\strcmp{\jobname}{index}=0
+	\end{document}
+\fi

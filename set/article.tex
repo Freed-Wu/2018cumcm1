@@ -1,0 +1,30 @@
+\makeatletter
+%-------------------------------------------------------------------------------------------------------
+\usepackage{enumitem}
+\setlist[enumerate, 1]
+{	fullwidth,
+	label = \arabic*., 
+	font = \textup, 
+	itemindent=2em
+}
+\setlist[enumerate, 2]
+{	fullwidth,
+	label = \arabic*., 
+	font = \textup, 
+	itemindent=2em
+}
+%-------------------------------------------------------------------------------------------------------
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{\small{第\chinese{section}节}}
+\cfoot{\small{第\thepage 页~共\pageref{LastPage}页}}
+\rfoot{}
+%-------------------------------------------------------------------------------------------------------
+\title{\textbf{基于统计学方法的企业经营优化}}
+\author{}
+\date{}
+%-------------------------------------------------------------------------------------------------------
+\makeatother
